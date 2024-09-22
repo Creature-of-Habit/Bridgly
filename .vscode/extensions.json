@@ -1,0 +1,20 @@
+{
+    "recommendations": [
+        "bradlc.vscode-tailwindcss",
+        "sudoaugustin.tailpile",
+        "thekalinga.bootstrap4-vscode",
+        "rodrigovallades.es7-react-js-snippets",
+        "dbaeumer.vscode-eslint",
+        "ecmel.vscode-html-css",
+        "visualstudioexptteam.vscodeintellicode",
+        "visualstudioexptteam.intellicode-api-usage-examples",
+        "ritwickdey.liveserver",
+        "christian-kohler.npm-intellisense",
+        "jasonnutter.search-node-modules",
+        "xabikos.reactsnippets",
+        "zhang-renyang.vscode-react",
+        "msjsdiag.vscode-react-native",
+        "steoates.autoimport",
+        "christian-kohler.path-intellisense"
+    ]
+}
