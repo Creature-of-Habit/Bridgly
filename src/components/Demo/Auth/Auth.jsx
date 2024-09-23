@@ -7,10 +7,9 @@ import { MdFacebook } from 'react-icons/md';
 import SignUp from './SignUp';
 import Signin from './Signin';
 
-const Auth = () => {
+const Auth = ({ modal, setModal }) => {
     const [createUser, setCreateUser] = useState(false);
     const [signReq, setSignReq] = useState("");
-    const [modal, setModal] = useState(true);
     const hidden = modal ? 'visible opacity-100' : 'invisible opacity-0';
     return (
         <Modal modal={modal} setModal={setModal} hidden={hidden}>

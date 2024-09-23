@@ -10,7 +10,7 @@ const SignUp = ({ setSignReq }) => {
                 Enter the email address to create Account.
             </p>
             <form className='flex flex-col gap-4'>
-                <Input type="email" title="email" />
+                <Input type="email" title="Email" />
                 <button
                     className='px-4 py-2 text-sm rounded-full bg-black
                 hover:bg-black/80 text-white w-fit mx-auto'>Continue
@@ -18,8 +18,8 @@ const SignUp = ({ setSignReq }) => {
             </form>
             <button
                 onClick={() => setSignReq("")}
-                className='mt-5 text-sm text-green-600 hover:text-green-700
-            flex items-center mx-auto'>
+                className='mt-5 text-sm text-green-600 
+                hover:text-green-700 flex items-center mx-auto'>
                 <MdKeyboardArrowLeft />
                 All sign Up Options
             </button>
