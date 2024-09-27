@@ -4,6 +4,7 @@ import Demo from "./components/Demo/Demo";
 import DemoHeader from "./components/Demo/DemoHeader";
 import HomeHeader from "./components/Home/HomeHeader";
 import { Blog } from "./Context/Context";
+import Write from "./components/Home/Write/Write";
 
 function App() {
   const {currentUser} =  Blog();
@@ -15,6 +16,7 @@ function App() {
         {currentUser && <Route path="/" element={<Home />} />}
         {!currentUser && <Route path="/demo" element={<Demo />} />}
       <Route path='*' element={<Navigate to={!currentUser ? "/demo" : "/"}/>} />
+      <Route path="/write" element={<Write/>}/>
       </Routes>
     </>
     </div>

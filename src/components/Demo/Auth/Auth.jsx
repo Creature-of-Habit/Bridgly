@@ -6,10 +6,21 @@ import { AiOutlineMail } from "react-icons/ai";
 import { MdFacebook } from 'react-icons/md';
 import SignUp from './SignUp';
 import Signin from './Signin';
+import { signInWithPopup } from 'firebase/auth';
+import {auth, provider} from "../../../firebase/firebase";
 
 const Auth = ({ modal, setModal }) => {
     const [createUser, setCreateUser] = useState(false);
     const [signReq, setSignReq] = useState("");
+    const googleAuth = async() => {
+        try {
+            const createUser = await signInWithPopup(auth)
+            const newUser = createUser.user;
+            const ref = doc(db, 'users', newUser.uid)
+        } catch (error) {
+            
+        };
+    }
     const hidden = modal ? 'visible opacity-100' : 'invisible opacity-0';
     return (
         <Modal modal={modal} setModal={setModal} hidden={hidden}>
